@@ -1,0 +1,90 @@
+/* ======================================== */
+/* GLOBAL THEME: Clean Academic Look */
+/* ======================================== */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  scroll-behavior: smooth;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background: linear-gradient(270deg, #00274d, #004d99, #007bff);
+  color: white;
+  padding: 1rem 0;
+}
+
+footer {
+  background: linear-gradient(270deg, #004d99, #00274d, #007bff);
+  color: white;
+  padding: 1.5rem 0;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #f8f9fa !important;
+}
+
+/* SKILL CARDS */
+.skill-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.skill-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* TEXT HIGHLIGHT */
+.text-accent {
+  font-weight: 800;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+body.dark-mode header,
+body.dark-mode footer {
+  background: linear-gradient(135deg, #001a33, #003366, #00509e);
+}
+body.dark-mode .navbar {
+  background-color: #1e293b !important;
+}
+body.dark-mode .skill-card {
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+
+/* CUSTOMIZATION PANEL */
+#customizationPanel {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode #customizationPanel {
+  background: rgba(30, 41, 59, 0.9);
+  color: white;
+}
+
+/* FADE-IN EFFECT */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
